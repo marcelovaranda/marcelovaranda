@@ -1,24 +1,7 @@
-<!DOCTYPE html>
 
-<html>
+{% extends "base.html" %}
 
-<head>
-<title> Eventex </title>
-<meta charset='utf-8'> 
-<script src="{{STATIC_URL}}js/jquery.min.js"></script>
-
-<link href="{{STATIC_URL}}css/estilos.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-
-	<div id="container">
-
-		<header>
-			<h1>Eventex</h1>
-		</header>
-
-		<div id="content">
+{% block content %}
 
 			<h1>Bem vindo a Eventex</h1>
 
@@ -31,26 +14,11 @@
 			</p>
 
 			<p>
-				Abertura das inscrições 30/09/2012
+				<strong><a href="/inscricao/">Inscreva-se Já!</a></strong>
 			</p>
 
 			<p>
 				Para dúvidas e mais informações entre em contato com <a href=mailto:eventex@eventex.com.br>eventex@eventex.com.br</a>
 			</p>
 
-		</div> <!-- /content -->
-
-	</div> <!-- /contaiuner -->
-
-
-	<footer>
-
-	</footer>
-
-<script>
-
-</script>
-
-</body>
-
-</html>
+{% endblock %}

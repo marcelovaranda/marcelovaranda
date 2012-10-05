@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title> Eventex </title>
+<meta charset='utf-8'> 
+<script src="{{STATIC_URL}}js/jquery.min.js"></script>
+
+<link href="{{STATIC_URL}}css/estilos.css" rel="stylesheet" type="text/css">
+
+{% block head %}
+{% endblock %}
+
+</head>
+
+<body>
+
+	<div id="container">
+
+		<header>
+			<h1>Eventex</h1>
+		</header>
+
+		<div id="content">
+
+			{% block content %}
+			{% endblock %}
+
+		</div> <!-- /content -->
+
+	</div> <!-- /contaiuner -->
+
+
+	<footer>
+
+		{% block footer %}
+		{% endblock %}
+
+	</footer>
+
+<script>
+
+</script>
+
+</body>
+
+</html>

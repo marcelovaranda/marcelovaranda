@@ -6,6 +6,7 @@ html, * {
 body {
 	font-family: Verdana;
 	font-size:12px;
+	background: #666;
 }
 
 #container {
@@ -15,7 +16,7 @@ body {
 	margin-top: 40px;
 	-webkit-border-radius: 20px;
 	border: 1px #CCC solid;
-	box-shadow: 1px 3px 3px 1px #EAEAEA;
+	box-shadow: 1px 3px 3px 1px #333;
 	background: #fafafa;
 }
 
@@ -51,5 +52,12 @@ header h1 {
 
 #content p {
 	text-align: justify;
-	margin:10px 0;
+	margin: 20px 0;
 }
+
+#content form p label {
+	width:63px;
+	float:left;
+}
+
+#content form p input {}
