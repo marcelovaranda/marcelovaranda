@@ -1,0 +1,20 @@
+{
+  "name": "teste-yo",
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  },
+  "version": "0.0.0",
+  "homepage": "https://github.com/marcelovaranda/marcelovaranda",
+  "description": "It's just a test",
+  "authors": [
+    "marcelovaranda@gail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
