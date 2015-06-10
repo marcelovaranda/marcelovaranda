@@ -1,0 +1,164 @@
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration:none;
+	color:#1690cc;
+}
+
+a:hover {
+	filter: brightness(1.5);
+	-webkit-filter: brightness(1.5);
+	-moz-filter: brightness(1.5);
+}
+
+body {
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:13px;
+	overflow-x:hidden;
+}
+
+@font-face{
+font-family:"HelveticaCSS";
+src:url(); /* Colocar o caminho do diretorio no server - mas conferir questão de direitos */
+}
+
+#container {
+	width:100%;
+	text-align:center;
+	min-width:320px;
+}
+
+header {
+	background-color:#ccc;
+	height:38px;
+}
+
+header h1 {
+	background:url(../images/logo.jpg) no-repeat center center;
+	height:38px;
+	font-size:0;
+	color:ccc;
+	margin-top:0;
+}
+
+#banner {
+	padding-top:40px;
+	background:url(../images/img_banner_principal.jpg) no-repeat center center;
+	height:578px;
+	width:100%;
+	background-size:cover;
+
+}
+
+#dv_tag {
+  	position: relative;	
+  	z-index: 9999;
+  	margin-right: 815px;
+  	margin-bottom: -97px;
+}
+
+#banner p.contador {
+	z-index: 9000;
+  	position: relative;
+	font-family: HelveticaCSS, Helvetica, Arial Black, Arial;
+	color:#d3d3d3;
+	font-size:187px;
+	font-weight:bold;
+	font-stretch:condensed;
+	opacity:0.5;
+    filter:alpha(opacity=50); /* Para IE8 e mais antigos */
+}
+
+#banner p.slogan {
+	font-family: HelveticaCSS, Helvetica, Arial Black, Arial;
+	color:#d3d3d3;
+    font-size: 29px;
+  	margin-top: -54px; /* compensa o padding necessário por usar cover no background */
+	font-weight:bold;
+}
+
+#banner p.cadastrese {
+	padding-top:40px;
+	color:#fff;
+	font-size:32px;
+	font-family: 'Open Sans', Arial;
+	font-weight:600;
+	text-shadow: 1px 1px 8px rgba(0, 0, 0, 1);
+}
+
+#frm_cadastrese {
+	position: relative;
+	width: 100%;
+	margin-top:30px;
+}
+
+#wrapper_bots {
+	position: relative;
+	height:52px;
+	max-width: 970px;
+	margin: 0 auto;
+	-moz-box-shadow:    0px 0px 0px 13px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 0px 13px rgba(0,0,0,0.5);
+    box-shadow: 		0px 0px 0px 13px rgba(0,0,0,0.5); 
+	-webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+#cp_txt_cadastrese, .bot_cadastrese {
+	position:relative;
+	height:52px;
+	border-radius: 4px;
+	font-family: 'Open Sans', Arial;
+	font-size:20px;
+	display: inline-block;
+	zoom: 1; /* for old ie */
+	vertical-align: top;
+}
+
+#cp_txt_cadastrese {
+	width:802px;
+	border: 1px #676767 solid;
+	color: #323232;
+	padding-left:8px;
+	font-size: 24px;
+
+}
+
+.bot_cadastrese {
+	background: #0884c1;
+	width:170px;
+	margin-left: -6px;
+	border-radius: 0px 2px 2px 0px;
+	box-shadow: inset 0 -1px 1px rgba(0,0,0,0.5); /*bottom internal shadow*/
+}
+
+/**** CARROSSEL ****/
+
+.slick-slide {
+	height:auto !important;
+}
+
+.slick-prev {
+	left:-7vw !important;
+}
+
+.slick-next  {
+	left:82vw !important;
+}
+
+.slick-prev, .slick-next {
+	width:5vw !important;
+	height:5vw !important;
+} 
+
+.slick-prev:before, .slick-next:before {
+	font-size:4vw !important;
+}
+

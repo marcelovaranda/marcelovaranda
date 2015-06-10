@@ -13,51 +13,198 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300Light">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <!-- endbuild -->
   </head>
   <body>
     <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      
     <![endif]-->
 
+  <div id="container" class="">
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">teste_yo</h3>
-      </div>
+    <header>
+          <h1>    
+              Viva Real
+          </h1>  
+    </header> <!-- Fim do Header -->
+    
+      <div id="content">
+          <div id="banner">
+              
+              <div id="wrapper_tag">
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      </div>
+                <div id="dv_tag">
+                    <img src="images/tag.png" id="img_tag" name="img_tag">
+                </div>
+              
+                <p class="contador">
+                    10:20:34:56
+                </p>
+            
+              </div>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+              <p class="slogan">
+                  Para a maior feira de descontos imobiliários do Brasil!
+              </p>
+            
+              <p class="cadastrese">
+                  Cadastre-se abaixo para receber informações
+              </p>
+              
+              <form id="frm_cadastrese" name="frm_cadastrese" action="">
+
+                <div id="wrapper_bots">
+
+                  <input type="text" id="cp_txt_cadastrese" name= "cp_txt_cadastrese" class="campoTexto" value="Digite seu e-mail aqui">
+                              
+                  <a href="#" class="btn btn-primary bot_cadastrese">Cadastrar</a>
+
+                </div>
+                
+              </form>
+                
+            </div>  <!-- Fim do banner -->
 
 
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-
-        </div>
-      </div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-
-    </div>
-
+          <div id="dv_banners">
+            <div class="ln_box col-lg-4 col-md-4 col-sm-4">
+                <ul>
+                    <li>
+                        <h3>
+                            Maiores Lançamentos
+                        </h3>
+                    </li>
+                    <li class="seta_banner">
+                      <img src="images/seta_banner.jpg" id="" name="">
+                    </li>
+                    <li class="banner banner_01">
+                      <h4>
+                          Lorem ipsum dolor 
+                        </h4>
+                        <p>
+                            onsectetur adipiscing elit. Ut vitae pulvinar felis, eget varius.
+                        </p>
+                    </li>
+                </ul>                 
+            </div>
+            <div class="ln_box col-lg-4 col-md-4 col-sm-4">
+                <ul>
+                    <li>
+                        <h3>
+                            Melhores Descontos
+                        </h3>
+                    </li>
+                    <li class="seta_banner">
+                      <img src="images/seta_banner.jpg" id="" name="">
+                    </li>
+                    <li class="banner banner_02">
+                      <h4>
+                          Lorem ipsum dolor 
+                        </h4>
+                        <p>
+                            onsectetur adipiscing elit. Ut vitae pulvinar felis, eget varius.
+                        </p>
+                    </li>
+                </ul>                 
+            </div>
+            <div class="ln_box col-lg-4 col-md-4 col-sm-4">
+                <ul>
+                    <li>
+                        <h3>
+                            Grandes Construtoras
+                        </h3>
+                    </li>
+                    <li class="seta_banner">
+                      <img src="images/seta_banner.jpg" id="" name="">
+                    </li>
+                    <li class="banner banner_03">
+                      <h4>
+                          Lorem ipsum dolor 
+                        </h4>
+                        <p>
+                            onsectetur adipiscing elit. Ut vitae pulvinar felis, eget varius.
+                        </p>
+                    </li>
+                </ul>                 
+            </div>
+                
+          </div> <!-- Fim do Dv Banners -->
+            
+            <div id="dv_apoio">
+              <label>
+                  Apoio:
+                </label>
+                <ul>
+                  <li>
+                      <img src="images/img_logoItau.jpg" id="img_logoItau" name="img_logoItau">
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="dv_participantes_container">
+              <p>
+                Veja quem está participando
+                </p>
+            
+            
+                <div id="dv_participantes_roleta" class="carrossel">
+                  <div><img src="images/img_logoCristina.jpg" id="" name=""></div>
+                    <div><img src="images/img_logoPersonal.jpg" id="" name=""></div>
+                    <div><img src="images/img_logoKotel.jpg" id="" name=""></div>
+                    <div><img src="images/img_logoCristina.jpg" id="" name=""></div>
+                    <div><img src="images/img_logoPersonal.jpg" id="" name=""></div>
+                    <div><img src="images/img_logoKotel.jpg" id="" name=""></div>
+                </div>
+                
+                <div id="dv_publicidade">
+                    <label>
+                        Publicidade
+                    </label>                    
+                    <img src="images/img_banner_publicidade.jpg" id="img_publicidade" name="img_publicidade">
+                </div>
+            
+            </div> <!-- Fim do Dv Participantes Container -->
+            
+        </div> <!-- Fim do Content -->
+        
+        <div id="footer">
+          
+            <ul id="lst_allrights">
+              <li>
+                  Copyright © 2014, VivaReal Inc. VivaReal. Todos os direitos reservados.
+                </li>
+                <li>
+                  <a href="" target="">
+                    Termos de Uso
+                    </a>
+                </li>
+                <li>
+                  <a href="" target="">
+                    Política de Privacidade
+                    </a>
+                </li>
+            </ul>
+            
+            <ul id="lst_social">
+              <li>
+                  <img src="images/icon_twitter.jpg" id="icon_twitter" name="icon_twitter">
+                </li>
+                <li>
+                  <img src="images/icon_gPlus.jpg" id="icon_gplus" name="icon_gplus">
+                </li>
+                <li>
+                  <img src="images/icon_fb.jpg" id="icon_fb" name="icon_fb">
+                </li>
+            </ul>
+        
+        </div> <!-- Fim do Footer -->
+    
+    </div> <!-- Fim do Container -->
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -88,10 +235,65 @@
         <script src="bower_components/bootstrap/js/scrollspy.js"></script>
         <script src="bower_components/bootstrap/js/collapse.js"></script>
         <script src="bower_components/bootstrap/js/tab.js"></script>
+
+        <!-- CARROUSEL -->
+        <link rel="stylesheet" type="text/css" href="scripts/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="scripts/slick/slick-theme.css">
+        <script type="text/javascript" src="scripts/slick/slick.min.js"></script>
+
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
+
+<script>
+  
+    // GLOBAIS
+        
+    $(document).ready(function(){
+
+      
+      
+      // CARROSSEL
+      $('.carrossel').slick({
+            infinite: false,
+          speed: 500,
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          arrows:true,
+          responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 4,
+                  infinite: false,
+                  }
+                },
+                {
+                  breakpoint: 800,
+                  settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  vertical:true,
+                  centerMode: true,
+                  centerPadding: '0px 22vw',
+                  arrows:false, /* EU DEIXARIA, mas não está no layout */
+                  }
+                }
+                ]
+      });
+     }); // Fim do Ready
+  
+  </script>
+
 </body>
 </html>
