@@ -3,8 +3,14 @@
   zoom: 1;
 }
 
+.glyphicon {
+	color:#f00;
+}
+
 ul {
 	list-style-type: none;
+	margin:0;
+	padding:0;
 }
 
 a {
@@ -63,7 +69,12 @@ header h1 {
   	margin-right: 815px;
   	margin-bottom: -97px;
 }
-
+/*
+#dv_tag img {
+	max-width:100%;
+	height:auto;
+}
+*/
 #banner p.contador {
 	z-index: 9000;
   	position: relative;
@@ -134,10 +145,179 @@ header h1 {
 .bot_cadastrese {
 	background: #0884c1;
 	width:170px;
+	font-size:26px;
 	margin-left: -6px;
 	border-radius: 0px 2px 2px 0px;
 	box-shadow: inset 0 -1px 1px rgba(0,0,0,0.5); /*bottom internal shadow*/
 }
+
+/*** MIOLO ***/
+
+#dv_banners {
+	position:relative;
+	margin: 60px auto 80px;
+	font-family: 'Open Sans', Arial;
+	width:80%;
+}
+
+#dv_banners .ln_box {
+	
+}
+
+#dv_banners ul li:first-child {
+	background-color: #363534;
+	color:#fff;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.inner {
+	-moz-box-shadow:    -1px 1px 6px 0px rgba(0,0,0,0.4);
+	-webkit-box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.4);
+    box-shadow: 		-1px 1px 6px 0px rgba(0,0,0,0.4); 
+	border-radius: 4px;
+	background-color:#e7e7e7;
+}
+
+
+.seta_banner {
+  padding: 0 !important;
+  background-color:#e7e7e7;
+  width: 100% !important;
+}
+
+#dv_banners li.seta_banner img {
+	vertical-align: top !important;
+}
+
+#dv_banners h3 {
+	font-weight:300;
+	font-size:32px;
+	padding:0;
+	margin:5px auto;
+	width:80%;
+}
+
+#dv_banners ul li {
+	font-size:12px;
+	padding:5px 2px;
+	width:auto;
+}
+
+
+#dv_banners span {
+	  font-size: 90px;
+	  padding: 20px 0px;
+	  color:#a11c21;
+}
+
+
+#dv_apoio {
+    clear: left;
+	background: #f4f3f3;
+	padding:1.5vw 0;
+}
+
+#dv_apoio label {
+	display:inline-block;
+    vertical-align: middle;
+	margin-right: 20px;
+	font-family: 'Open Sans', Arial;
+	font-size:26px;
+	font-weight:300;
+}
+
+#dv_apoio ul {
+	display:inline-block;
+}
+
+
+#dv_participantes_container {
+	clear:left;
+	background:#d6d6d6;
+	font-family: 'Open Sans', Arial;
+	font-weight:300;
+	padding: 45px 25px 75px;
+}
+#dv_participantes_container p {
+	font-size:36px;
+}
+
+#dv_participantes_roleta {
+	clear:left;
+	margin: 30px 60px;
+}
+
+#dv_publicidade {
+	position:relative;
+	clear:left;
+	padding: 35px 0px 0px;
+	width: 730px;
+	margin: 0 auto;
+}
+
+#dv_publicidade label {
+	display:table;
+}
+
+
+
+#footer {
+	background:#383631;
+	clear:left;
+	color:#fff;
+	font-family: 'Open Sans', Arial;
+	height:58px;
+}
+
+#footer ul {
+	text-align:left;
+	margin-left:50px;
+	margin-right:50px;
+	display:inline-block;
+}
+
+#footer ul li {
+	display:inline-block;
+}
+
+#lst_allrights {
+	float:left;
+	padding:20px 0px 0px;
+}
+
+#lst_allrights li {
+	border-right: 1px #1690cc solid; 
+	padding: 0px 10px 0px 5px;
+}
+
+#lst_allrights li:first-child {
+	border-right:0;
+	padding:0; 
+}
+
+#lst_allrights li:last-child {
+	border-right:0;
+}
+
+#lst_social {
+	float:right;
+	padding: 13px 0px 7px;
+	margin-left: 0px !important;
+}
+
+#lst_social li {
+	margin-left:10px;
+}
+
+#lst_social li:nth-child(2){
+  margin-left: 8px;
+}
+
+#icon_twitter, #icon_gplus, #icon_fb {
+	cursor:hand;
+	cursor:pointer;
+}
+
 
 /**** CARROSSEL ****/
 
@@ -146,19 +326,36 @@ header h1 {
 }
 
 .slick-prev {
-	left:-7vw !important;
+	left:-70px !important;
 }
 
 .slick-next  {
-	left:82vw !important;
+	
 }
 
 .slick-prev, .slick-next {
-	width:5vw !important;
-	height:5vw !important;
+	width:50px !important;
+	height:50px !important;
 } 
 
 .slick-prev:before, .slick-next:before {
-	font-size:4vw !important;
+	font-size:40px !important;
 }
 
+@media screen and (max-width:1090px) {
+	#banner p.contador {
+		font-size:160px;
+	}
+
+	#dv_tag {
+		position: relative;
+		z-index: 9999;
+		margin-right: 705px;
+  		margin-bottom: -83px;
+	}
+
+	#dv_tag img {
+		width:160px;
+		height:auto;
+	}
+}

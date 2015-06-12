@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300Light">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/whhg.css">
     <link rel="stylesheet" href="styles/styles.css">
     <!-- endbuild -->
   </head>
@@ -71,8 +72,9 @@
             </div>  <!-- Fim do banner -->
 
 
-          <div id="dv_banners">
+          <div id="dv_banners" class="row">
             <div class="ln_box col-lg-4 col-md-4 col-sm-4">
+              <div class='inner'>
                 <ul>
                     <li>
                         <h3>
@@ -82,6 +84,9 @@
                     <li class="seta_banner">
                       <img src="images/seta_banner.jpg" id="" name="">
                     </li>
+                    <li>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    </li>
                     <li class="banner banner_01">
                       <h4>
                           Lorem ipsum dolor 
@@ -90,9 +95,11 @@
                             onsectetur adipiscing elit. Ut vitae pulvinar felis, eget varius.
                         </p>
                     </li>
-                </ul>                 
+                </ul>
+              </div>               
             </div>
             <div class="ln_box col-lg-4 col-md-4 col-sm-4">
+              <div class='inner'>
                 <ul>
                     <li>
                         <h3>
@@ -102,6 +109,9 @@
                     <li class="seta_banner">
                       <img src="images/seta_banner.jpg" id="" name="">
                     </li>
+                    <li>
+                      <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+                    </li>
                     <li class="banner banner_02">
                       <h4>
                           Lorem ipsum dolor 
@@ -110,9 +120,11 @@
                             onsectetur adipiscing elit. Ut vitae pulvinar felis, eget varius.
                         </p>
                     </li>
-                </ul>                 
+                </ul>
+              </div>               
             </div>
             <div class="ln_box col-lg-4 col-md-4 col-sm-4">
+              <div class='inner'>
                 <ul>
                     <li>
                         <h3>
@@ -122,6 +134,9 @@
                     <li class="seta_banner">
                       <img src="images/seta_banner.jpg" id="" name="">
                     </li>
+                    <li>
+                      <span class="glyphicon icon-office-building" aria-hidden="true"></span>
+                    </li>
                     <li class="banner banner_03">
                       <h4>
                           Lorem ipsum dolor 
@@ -130,7 +145,8 @@
                             onsectetur adipiscing elit. Ut vitae pulvinar felis, eget varius.
                         </p>
                     </li>
-                </ul>                 
+                </ul> 
+              </div>                
             </div>
                 
           </div> <!-- Fim do Dv Banners -->
@@ -253,7 +269,7 @@
         
     $(document).ready(function(){
 
-      
+      bindEvents();
       
       // CARROSSEL
       $('.carrossel').slick({
