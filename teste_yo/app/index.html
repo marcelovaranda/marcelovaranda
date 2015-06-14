@@ -35,7 +35,7 @@
     </header> <!-- Fim do Header -->
     
       <div id="content">
-          <div id="banner">
+          <div id="banner" class="clearfix">
               
               <div id="wrapper_tag">
 
@@ -73,7 +73,7 @@
 
 
           <div id="dv_banners" class="row">
-            <div class="ln_box col-lg-4 col-md-4 col-sm-4">
+            <div class="ln_box col-lg-4 col-md-4 col-sm-12">
               <div class='inner'>
                 <ul>
                     <li>
@@ -98,7 +98,7 @@
                 </ul>
               </div>               
             </div>
-            <div class="ln_box col-lg-4 col-md-4 col-sm-4">
+            <div class="ln_box col-lg-4 col-md-4 col-sm-12">
               <div class='inner'>
                 <ul>
                     <li>
@@ -123,7 +123,7 @@
                 </ul>
               </div>               
             </div>
-            <div class="ln_box col-lg-4 col-md-4 col-sm-4">
+            <div class="ln_box col-lg-4 col-md-4 col-sm-12">
               <div class='inner'>
                 <ul>
                     <li>
@@ -188,25 +188,23 @@
             
         </div> <!-- Fim do Content -->
         
-        <div id="footer">
+        <div id="footer" class="clearfix">
           
-            <ul id="lst_allrights">
-              <li>
-                  Copyright © 2014, VivaReal Inc. VivaReal. Todos os direitos reservados.
-                </li>
-                <li>
-                  <a href="" target="">
-                    Termos de Uso
-                    </a>
-                </li>
-                <li>
-                  <a href="" target="">
-                    Política de Privacidade
-                    </a>
-                </li>
-            </ul>
-            
-            <ul id="lst_social">
+          <div id="lst_allrights">
+            Copyright © 2014, VivaReal Inc. VivaReal. Todos os direitos reservados.
+          </div>
+
+          <div id="links_footer">
+            <a href="" target="">
+              Termos de Uso
+            </a>
+            <a href="" target="">
+              Política de Privacidade
+            </a>
+          </div>
+
+          <div id="lst_social">
+            <ul>
               <li>
                   <img src="images/icon_twitter.jpg" id="icon_twitter" name="icon_twitter">
                 </li>
@@ -217,7 +215,8 @@
                   <img src="images/icon_fb.jpg" id="icon_fb" name="icon_fb">
                 </li>
             </ul>
-        
+          </div>
+
         </div> <!-- Fim do Footer -->
     
     </div> <!-- Fim do Container -->
@@ -301,7 +300,7 @@
                   slidesToScroll: 3,
                   vertical:true,
                   centerMode: true,
-                  centerPadding: '0px 22vw',
+                  centerPadding: '0px',
                   arrows:false, /* EU DEIXARIA, mas não está no layout */
                   }
                 }

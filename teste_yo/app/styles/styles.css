@@ -1,6 +1,18 @@
-.clearfix {
-  overflow: auto;
-  zoom: 1;
+.clearfix:after { 
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden; 
+}
+.clearfix { 
+  display: inline-block;  
+}
+* html .clearfix {  
+  height: 1%;  
+} /* Hides from IE-mac \*/
+.clearfix {  
+  display: block;  
 }
 
 .glyphicon {
@@ -25,9 +37,10 @@ a:hover {
 }
 
 body {
-	font-family:Helvetica, Arial, sans-serif;
+	font-family:'HelveticaCSS',Helvetica, Arial, sans-serif;
 	font-size:13px;
 	overflow-x:hidden;
+	background:#383631; /*** WORKAROUND AGAINST ITAU DAMMIT PROTECTION MODULE ***/
 }
 
 @font-face{
@@ -39,6 +52,7 @@ src:url(); /* Colocar o caminho do diretorio no server - mas conferir questão d
 	width:100%;
 	text-align:center;
 	min-width:320px;
+	background:#fff; /*** WORKAROUND AGAINST ITAU DAMMIT PROTECTION MODULE ***/
 }
 
 header {
@@ -57,7 +71,7 @@ header h1 {
 #banner {
 	padding-top:40px;
 	background:url(../images/img_banner_principal.jpg) no-repeat center center;
-	height:578px;
+	max-height:578px;
 	width:100%;
 	background-size:cover;
 
@@ -108,11 +122,11 @@ header h1 {
 	position: relative;
 	width: 100%;
 	margin-top:30px;
+	margin-bottom: 50px;
 }
 
 #wrapper_bots {
 	position: relative;
-	height:52px;
 	max-width: 970px;
 	margin: 0 auto;
 	-moz-box-shadow:    0px 0px 0px 13px rgba(0,0,0,0.5);
@@ -155,13 +169,22 @@ header h1 {
 
 #dv_banners {
 	position:relative;
-	margin: 60px auto 80px;
+	margin: 60px auto 50px;
 	font-family: 'Open Sans', Arial;
 	width:80%;
 }
 
 #dv_banners .ln_box {
 	
+}
+
+#dv_banners h4 {
+  	font-weight: bold;
+  	margin-bottom: 0px;
+}
+
+#dv_banners p {
+  padding: 0 20px;
 }
 
 #dv_banners ul li:first-child {
@@ -176,6 +199,7 @@ header h1 {
     box-shadow: 		-1px 1px 6px 0px rgba(0,0,0,0.4); 
 	border-radius: 4px;
 	background-color:#e7e7e7;
+	margin: 0px 0px 30px;
 }
 
 
@@ -191,7 +215,7 @@ header h1 {
 
 #dv_banners h3 {
 	font-weight:300;
-	font-size:32px;
+	font-size:240%;
 	padding:0;
 	margin:5px auto;
 	width:80%;
@@ -266,13 +290,11 @@ header h1 {
 	clear:left;
 	color:#fff;
 	font-family: 'Open Sans', Arial;
-	height:58px;
+	min-height:58px;
+	padding: 0px 0px 0px 50px;
 }
 
 #footer ul {
-	text-align:left;
-	margin-left:50px;
-	margin-right:50px;
 	display:inline-block;
 }
 
@@ -280,12 +302,17 @@ header h1 {
 	display:inline-block;
 }
 
-#lst_allrights {
-	float:left;
-	padding:20px 0px 0px;
+#lst_allrights, #links_footer {
+	padding: 20px 0px 0px 0px;
+  	float: left;
 }
 
-#lst_allrights li {
+#links_footer a {
+	display: inline-block;
+	margin-left: 6px;
+}
+
+#links_footer a:first-child {
 	border-right: 1px #1690cc solid; 
 	padding: 0px 10px 0px 5px;
 }
@@ -300,9 +327,10 @@ header h1 {
 }
 
 #lst_social {
-	float:right;
-	padding: 13px 0px 7px;
-	margin-left: 0px !important;
+	padding: 13px 0px 7px !important;
+	margin: 0px 20px 0px 0px !important;
+	min-width:150px;
+	float: right;
 }
 
 #lst_social li {
@@ -330,7 +358,7 @@ header h1 {
 }
 
 .slick-next  {
-	
+	right: -55px !important;
 }
 
 .slick-prev, .slick-next {
@@ -342,14 +370,12 @@ header h1 {
 	font-size:40px !important;
 }
 
-@media screen and (max-width:1090px) {
+@media screen and (max-width:1090px) and (min-width:925px){
 	#banner p.contador {
 		font-size:160px;
 	}
 
 	#dv_tag {
-		position: relative;
-		z-index: 9999;
 		margin-right: 705px;
   		margin-bottom: -83px;
 	}
@@ -358,4 +384,170 @@ header h1 {
 		width:160px;
 		height:auto;
 	}
+
+	#wrapper_bots {
+  		max-width: 830px;
+  	}
+
+	#cp_txt_cadastrese {
+  		width: 660px;
+  	}
+
+}
+
+@media screen and (max-width:924px) and (min-width:590px){
+	#banner p.contador {
+		font-size:100px;
+	}
+
+	#dv_tag {
+		margin-right: 445px;
+		margin-bottom: -55px;
+	}
+
+	#dv_tag img {
+		width:100px;
+		height:auto;
+	}
+
+	#banner p.slogan {
+		font-size: 18px;
+  		margin-top: -33px;
+	}
+
+	#banner p.cadastrese {
+  		font-size: 24px;
+  	}
+
+  	#frm_cadastrese {
+		margin-top:20px;
+	}
+
+	#wrapper_bots {
+  		max-width: 510px;
+  		box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.5);
+  	}
+
+	#cp_txt_cadastrese, .bot_cadastrese {
+		font-size: 16px;
+		height: 37px;
+	}
+
+	.bot_cadastrese {
+  		width: 110px;
+  	}
+
+	#cp_txt_cadastrese {
+  		width: 400px;
+  	}
+
+	#lst_allrights, #links_footer , #lst_social {
+		clear:left;
+		float:none;
+	}
+
+	#dv_publicidade {
+		display:none;
+	}
+
+	#footer {
+		padding: 0px 10% 0px 5%;
+	}
+}
+
+@media screen and (max-width:589px){
+	#banner {
+  		padding: 25px 29px 0 10px;
+  	}
+
+	#banner p.contador {
+		font-size:48px;
+	}
+
+	#dv_tag {
+		margin-right: 0px;
+		margin-bottom: -25px;
+	}
+
+	#dv_tag img {
+		width:80px;
+		height:auto;
+	}
+
+	#banner p.slogan {
+		font-size: 14px;
+  		margin-top: -23px;
+	}
+
+	#banner p.cadastrese {
+  		font-size: 19px;
+  		padding-top:10px;
+  	}
+
+  	#frm_cadastrese {
+		margin-top:20px;
+		margin-bottom: 80px;
+	}
+
+	#wrapper_bots {
+  		max-width: 230px;
+  		box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.5);
+  		height: 36px;
+  	}
+
+	#cp_txt_cadastrese, .bot_cadastrese {
+		font-size: 16px;
+		height: 37px;
+	}
+
+	.bot_cadastrese {
+  		width: 242px;
+  		margin-top: 15px;
+  	}
+
+	#cp_txt_cadastrese {
+  		width: 230px;
+  	}
+
+  	#dv_banners {
+  		margin: 20px auto 0px;
+  	}
+
+  	#dv_banners h3 {
+  		font-size: 140%;
+  	}
+
+  	#dv_banners span {
+  		padding: 5px;
+  	}
+
+  	#dv_banners h4 {
+  		font-size: 14px;
+  	}
+
+	#lst_allrights, #links_footer , #lst_social {
+		clear:left;
+		float:none;
+	}
+
+	#dv_publicidade {
+		display:none;
+	}
+
+	#dv_participantes_container {
+		padding: 25px 25px 1px;
+	}
+
+	#dv_participantes_container p {
+ 	 	font-size: 18px;
+	}
+
+	.slick-slide img {
+		display:inline !important;
+	}
+
+	#footer {
+		padding: 0px 10% 0px 5%;
+	}
+
 }
