@@ -106,6 +106,18 @@ body {
   min-width: 79%;
 }
 
+#logo_index img {
+  filter: brightness(0.9);
+  -webkit-filter: brightness(0.9);
+  -moz-filter: brightness(0.9);
+}
+
+#logo_index img:hover {
+  filter: brightness(2);
+  -webkit-filter: brightness(2);
+  -moz-filter: brightness(2);
+}
+
 #pg1 h1 {
   color:#fff;
   font-size: 60px;
