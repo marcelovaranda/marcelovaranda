@@ -68,13 +68,18 @@ h1 {
   z-index:9999;
 }
 
+#sp_menu {
+    margin-right:10px;
+    color:#fff;
+  }
+
 #bot_menu {
   cursor: pointer;
   filter: brightness(0.7);
   -webkit-filter: brightness(0.7);
   -moz-filter: brightness(0.7);
-  width: 3.5%;
-  min-width: 59px;
+  width: 2.5%;
+  min-width: 50px;
 }
 
 #bot_menu:hover {
@@ -441,4 +446,65 @@ h1 {
     width: 82px;
     left: 38%;
   }
+}
+
+.shadowStandard {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter:         drop-shadow(5px 5px 5px #222); 
+}
+
+/**** EXTRA ANIMATIONS ****/
+
+.blink {
+  animation: blink 5s steps(5, start) infinite;
+  -webkit-animation: blink 5s steps(5, start) infinite;
+}
+@keyframes blink {
+  to {
+     visibility: hidden;
+     }
+}
+@-webkit-keyframes blink {
+  to {
+     visibility: hidden;
+     }
+}
+
+.brightness {
+  -webkit-animation: brightness 4s infinite;
+  -moz-animation: brightness 4s infinite;
+  -o-animation: brightness 4s infinite;
+  animation: brightness 4s infinite;
+}
+
+@-webkit-keyframes brightness {
+  0%, 100%  { -webkit-filter: brightness(none); }
+  50% { -webkit-filter: brightness(1.5); }
+}
+
+.animate-flicker {
+   -webkit-animation: flickerAnimation 4s infinite;
+   -moz-animation: flickerAnimation 4s infinite;
+   -o-animation: flickerAnimation 4s infinite;
+    animation: flickerAnimation 4s infinite;
+}
+@keyframes flickerAnimation {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
 }

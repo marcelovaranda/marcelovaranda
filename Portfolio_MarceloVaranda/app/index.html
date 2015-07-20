@@ -23,15 +23,16 @@
     <div class="container">
      
       <div id="header">
-        <img src="images/img_menu_white.png" id="bot_menu" name="bot_menu" title="Click to Open/Close the Menu">
+        <span id="sp_menu" class="animate-flicker">Menu</span>
+        <img src="images/img_menu_new.png" id="bot_menu" name="bot_menu" title="Click to Open/Close the Menu" class="brightness shadowStandard">
       </div>
 
       <div id="content">
       	 <div id="pg1">
 
             <div id="logo_index" class="title">
-              <img src="images/logo_lamp.png" id="" name="" title="">
-              <h1>
+              <img src="images/logo_lamp.png" id="" name="" title="" class="animated bounceIn wow" data-wow-delay="0.7s">
+              <h1 class="animated fadeInUp wow">
                 Marcelo Varanda
                 <br>
                 <span class="sepia">
@@ -44,7 +45,7 @@
       </div>
 
        <div id="pg2">
-         <div id="logo_top">
+         <div id="logo_top" class="animated fadeInUp wow">
            <img src="images/logo_lamp.png" id="" name="" title="" class="rotate">
             <h2>
               Marcelo Varanda
@@ -56,14 +57,14 @@
          </div>
 
          <div class="title">
-          <h1>
+          <h1 class="animated bounceIn wow" data-wow-delay="0.3s">
             You Matter
           </h1>
          </div>
        </div>
 
        <div id="pg3">
-         <div id="logo_top">
+         <div id="logo_top" class="animated fadeInUp wow">
            <img src="images/logo_lamp.png" id="" name="" title="" class="rotate">
             <h2>
               Marcelo Varanda
@@ -75,14 +76,14 @@
          </div>
 
          <div class="title">
-          <h1>
+          <h1 class="animated bounceIn wow" data-wow-delay="0.3s">
             Experience Beautiful
           </h1>
          </div>
        </div>
 
        <div id="pg4">
-         <div id="logo_top">
+         <div id="logo_top" class="animated fadeInUp wow">
            <img src="images/logo_lamp.png" id="" name="" title="" class="rotate">
             <h2>
               Marcelo Varanda
@@ -94,14 +95,14 @@
          </div>
 
          <div class="title">
-          <h1>
+          <h1 class="animated bounceIn wow" data-wow-delay="0.3s">
             Trust You Earn
           </h1>
          </div>
        </div>
 
        <div id="pg5">
-         <div id="logo_top">
+         <div id="logo_top" class="animated fadeInUp wow">
            <img src="images/logo_lamp.png" id="" name="" title="" class="rotate">
             <h2>
               Marcelo Varanda
@@ -113,7 +114,7 @@
          </div>
 
          <div class="title">
-          <h1>
+          <h1 class="animated bounceIn wow" data-wow-delay="0.3s">
             Say Hello
           </h1>
          </div>
@@ -125,28 +126,28 @@
 
       <div id="menu">
         <ul>
-          <li>
+          <li class="animated fadeInLeft wow" data-wow-delay="0.3s">
             <span class="arrow sepia">&#9668</span>
             <label>
               <a href="index.html">Home</a>
             </label>
             <span class="arrow sepia">&#9658</span>
           </li>
-          <li>
+          <li class="animated fadeInRight wow" data-wow-delay="0.5s">
             <span class="arrow sepia">&#9668</span>
             <label>
               <a href="aboutMe.html">About Me</a>
             </label>
             <span class="arrow sepia">&#9658</span>
           </li>
-          <li>
+          <li class="animated fadeInLeft wow" data-wow-delay="0.7s">
             <span class="arrow sepia">&#9668</span>
             <label>
               <a href="cases.html">Cases</a>
             </label>
             <span class="arrow sepia">&#9658</span>
           </li>
-          <li>
+          <li class="animated fadeInRight wow" data-wow-delay="0.9s">
             <span class="arrow sepia">&#9668</span>
             <label>
               <a href="contact.html">Contact Me</a>
@@ -191,6 +192,8 @@
         <script src="bower_components/bootstrap/js/tab.js"></script>
         <!-- endbuild -->
 
+        <script src="scripts/wow.min.js"></script>
+
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
@@ -198,6 +201,8 @@
   <script>
     $(document).ready(function(){
       bindEvents();
+
+      new WOW().init();
     });
   </script>
 
