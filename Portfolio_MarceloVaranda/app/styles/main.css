@@ -337,6 +337,10 @@ h1 {
   border-bottom:1px #202020 dashed;
 }
 
+#menu label:last-child {
+  border-bottom:0;
+}
+
 #menu a {
   color:#fff;
   font-size: 30px;
