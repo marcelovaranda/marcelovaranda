@@ -41,13 +41,14 @@ media="all" *, *:after, *:before {
 
 body {
     height: 100%;
-    background:#333; /*** WORKAROUND AGAINST ITAU PROTECTION MODULE ***/
+    background:#fff; /*** WORKAROUND AGAINST ITAU PROTECTION MODULE ***/
     font-size: 21px;
 }
 
 h1 {
   color:#fff;
   font-size: 60px;
+  font-family: 'Lobster Two', cursive;
 }
 
 .container {
@@ -107,113 +108,6 @@ h1 {
   background-size: 100%;
 }
 
-/*********** PAGE 1 **************/
-
-#pg1 {
-  background: url(../images/img_paulistaRuido_opacity.jpg) center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size:cover;
-}
-
-#logo_index {
-  border:0px;
-  padding:0;
-  min-width:79%;
-}
-
-#logo_index img {
-  filter: brightness(0.9);
-  -webkit-filter: brightness(0.9);
-  -moz-filter: brightness(0.9);
-}
-
-#logo_index img:hover {
-  filter: brightness(2);
-  -webkit-filter: brightness(2);
-  -moz-filter: brightness(2);
-}
-
-
-/*********** PAGE 2 **************/
-
-#pg2 {
-  background: url(../images/img_youMatter_opacity.jpg) center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size:cover;
-  box-sizing: content-box;
-  padding-top: 6%;
-}
-
-#pg2 .title {
-  top: 150%;
-  width:auto;
-}
-
-/*********** PAGE 3 **************/
-
-#pg3 {
-  background: url(../images/img_experienceBeautiful.jpg) center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size:cover;
-  box-sizing: content-box;
-  padding-top: 6%;
-}
-
-#pg3 .title {
-  top: 259.7%;
-  width:auto;
-}
-
-#pg3 h1 {
-  color:#111 !important;
-  max-width: 380px;
-  padding: 0px 0px !important;
-  margin: 0 0 20px 0;
-}
-
-/*********** PAGE 4 **************/
-
-#pg4 {
-  background: url(../images/img_clients.jpg) center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size:cover;
-  box-sizing: content-box;
-  padding-top: 6%;
-}
-
-#pg4 .title {
-  top: 375%;
-  width:auto;
-  min-width: 525px;
-}
-
-/*********** PAGE 5 **************/
-
-#pg5 {
-  background: url(../images/img_sayHello.jpg) center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size:cover;
-  box-sizing: content-box;
-  padding-top: 6%;
-  margin-top: -6px;
-}
-
-#pg5 .title {
-  top: 485%;
-  width:auto;
-}
-
-
 #logo_top img {
   filter: brightness(0.9);
   -webkit-filter: brightness(0.9);
@@ -245,6 +139,11 @@ h1 {
   filter: brightness(2);
   -webkit-filter: brightness(2);
   -moz-filter: brightness(2);
+}
+
+#pg2, #pg3, #pg4, #pg5 {
+  float: left;
+  clear: both;
 }
 
 #pg2 h1, #pg3 h1, #pg4 h1, #pg5 h1 {
@@ -294,6 +193,203 @@ h1 {
 }
 .sepia {
   color:#745d3b;
+}
+
+.fadeOut{
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+ }
+
+/*********** PAGE 1 **************/
+
+#pg1 {
+  background: url(../images/img_paulistaRuido_opacity.jpg) center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size:cover;
+}
+
+#logo_index {
+  border:0px;
+  padding:0;
+  min-width:79%;
+}
+
+#logo_index img {
+  filter: brightness(0.9);
+  -webkit-filter: brightness(0.9);
+  -moz-filter: brightness(0.9);
+}
+
+#logo_index img:hover {
+  filter: brightness(2);
+  -webkit-filter: brightness(2);
+  -moz-filter: brightness(2);
+}
+
+
+/*********** PAGE 2 **************/
+
+#pg2 {
+  background: url(../images/img_youMatter_opacity.jpg) center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size:cover;
+  box-sizing: content-box;
+  padding-top: 6%;
+}
+
+#pg2 .title {
+  top: 150%;
+  width:auto;
+}
+
+#content_pg2 {
+  color:#fff !important;
+  float:right;
+  text-align: left;
+  width:48%;
+  min-width: 415px;
+  margin-top: 60px;
+}
+
+#content_pg2 h1 {
+  border-bottom: 1px #735d39 solid;
+  padding:0;
+  padding-right: 25%;
+  font-size:310%;
+}
+
+#content_pg2 p {
+  padding-right: 25%;
+  padding-bottom:20px;
+}
+
+/*********** PAGE 3 **************/
+
+#pg3 {
+  background: url(../images/img_experienceBeautiful.jpg) center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size:cover;
+  box-sizing: content-box;
+  padding-top: 6%;
+}
+
+#pg3 .title {
+  top: 259.7%;
+  width:auto;
+}
+
+#pg3 h1 {
+  color:#111 !important;
+  max-width: 380px;
+  padding: 0px 0px !important;
+  margin: 0 0 20px 0;
+}
+
+#content_pg3 {
+  float:right;
+  text-align: left;
+  width:48%;
+  min-width: 415px;
+  margin-top: 40px;
+}
+
+#content_pg3 h1 {
+  color:#745d3b !important;
+  border-bottom: 1px #735d39 solid;
+  padding:0 0 5px 0!important;
+  font-size:310% !important;
+  margin:0 !important;
+  max-width: inherit;
+}
+
+#content_pg3 p {
+  padding-right: 25%;
+  padding-bottom:20px;
+}
+
+/*********** PAGE 4 **************/
+
+#pg4 {
+  background: url(../images/img_clients.jpg) center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size:cover;
+  box-sizing: content-box;
+  padding-top: 6%;
+}
+
+#pg4 .title {
+  top: 375%;
+  width:auto;
+  min-width: 525px;
+}
+
+#content_pg4 {
+  color:#fff !important;
+  width:100%;
+  min-width: 415px;
+  margin-top: 60px;
+}
+
+#content_pg4 h1 {
+  border-bottom: 1px #735d39 solid;
+  padding:0;
+  font-size:310%;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+#content_pg4 p {
+  padding-right: 25%;
+  padding-bottom:20px;
+}
+
+/*********** PAGE 5 **************/
+
+#pg5 {
+  background: url(../images/img_sayHello.jpg) center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size:cover;
+  box-sizing: content-box;
+  padding-top: 6%;
+  margin-top: -6px;
+}
+
+#pg5 .title {
+  top: 485%;
+  width:auto;
+}
+
+#content_pg5 {
+  color:#fff !important;
+  width:100%;
+  min-width: 415px;
+  margin-top: 60px;
+}
+
+#content_pg5 h1 {
+  border-bottom: 1px #735d39 solid;
+  padding:0;
+  font-size:310%;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 130px;
+}
+
+#content_pg5 p {
+  padding-right: 25%;
+  padding-bottom:20px;
 }
 
 
@@ -361,6 +457,10 @@ h1 {
 }
 
 
+.neuzeitGrot {
+   font-family: "neuzeitGrot", arial;
+}
+
 /********* MEDIA QUERIES **********/
 
 @media screen and (max-width:1280px) and (min-width:1025px){
@@ -370,6 +470,10 @@ h1 {
 }
 
 @media screen and (max-width:1024px) and (min-width:801px){
+  #pg3 #logo_top {
+    margin-top: -3%;
+  }
+
   #pg4 .title {
     top: 365%;
   }
@@ -377,12 +481,20 @@ h1 {
 
 
 @media screen and (max-width:800px) and (min-width:641px){
+  #pg3 #logo_top {
+    margin-top: -2%;
+  }
+
   #pg4 .title {
     top: 360%;
   }
 }
 
 @media screen and (max-width:640px){
+  #pg3 #logo_top {
+    margin-top: 0;
+  }
+
   #pg4 .title {
     min-width: 300px;
     top: 354%;
