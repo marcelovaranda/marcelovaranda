@@ -12,3 +12,27 @@ function bindEvents(){
 		$(this).parent().addClass(animationClass2);
 	});
 }
+
+function detectScroll(){
+	$(window).scroll(function () {
+
+    	if ($(window).scrollTop() + $('#header').height() > $('#pg1').height()) {
+        	showFullTop();
+    	} else {
+        	hideFullTop();
+    	}
+	});
+}
+
+var animationClassTop    = 'fadeIn animated';
+function showFullTop(){
+	$('#header').addClass('topFixed');
+	$('#header').addClass(animationClassTop);
+	$('#logo_top').css('display','inline-block');
+}
+
+function hideFullTop(){
+	$('#header').removeClass(animationClassTop);
+	$('#logo_top').css('display','none');
+	$('#header').removeClass('topFixed');
+}

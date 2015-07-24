@@ -23,8 +23,20 @@
     <div class="container">
      
       <div id="header">
-        <span id="sp_menu" class="animate-flicker">Menu</span>
-        <img src="images/img_menu_new.png" id="bot_menu" name="bot_menu" title="Click to Open/Close the Menu" class="brightness shadowStandard">
+        <div id="logo_top" class="animated rubberBand wow">
+           <img src="images/logo_lamp.png" id="" name="" title="" class="rotate">
+            <h2>
+              Marcelo Varanda
+              <br>
+              <span class="sepia">
+                Web + Design
+              </span>
+            </h2>
+        </div>
+        <div id="nav">
+          <span id="sp_menu" class="animate-flicker">Menu</span>
+          <img src="images/img_menu_new.png" id="bot_menu" name="bot_menu" title="Click to Open/Close the Menu" class="brightness shadowStandard">
+        </div>
       </div>
 
       <div id="content">
@@ -45,17 +57,6 @@
       </div>
 
        <div id="pg2">
-         <div id="logo_top" class="animated fadeInUp wow">
-           <img src="images/logo_lamp.png" id="" name="" title="" class="rotate">
-            <h2>
-              Marcelo Varanda
-              <br>
-              <span class="sepia">
-                Web + Design
-              </span>
-            </h2>
-         </div>
-
          <div class="title fadeLater">
           <h1 class="bounceIn animated wow" data-wow-delay="0.3s">
             You Matter
@@ -252,6 +253,8 @@
       bindEvents();
 
       new WOW().init();
+
+      detectScroll();
     });
   </script>
 
