@@ -43,6 +43,8 @@ body {
     height: 100%;
     background:#fff; /*** WORKAROUND AGAINST ITAU PROTECTION MODULE ***/
     font-size: 21px;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
