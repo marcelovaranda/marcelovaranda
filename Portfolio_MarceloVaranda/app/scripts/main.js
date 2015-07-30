@@ -14,6 +14,10 @@ function bindEvents(){
 }
 
 function detectScroll(){
+	$(window).load(function() {
+		window.scrollTo(0,0);
+	});
+
 	$(window).scroll(function () {
 
     	if ($(window).scrollTop() + $('#header').height() > $('#pg1').height()) {
@@ -29,6 +33,7 @@ function showFullTop(){
 	$('#header').addClass('topFixed');
 	$('#header').addClass(animationClassTop);
 	$('#logo_top').css('display','inline-block');
+
 }
 
 function hideFullTop(){

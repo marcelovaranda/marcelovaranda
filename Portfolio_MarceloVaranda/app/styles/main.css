@@ -62,6 +62,11 @@ h1 {
   min-width:320px;
 }
 
+.wrapper {
+  width: 100%;
+  overflow-x:hidden;
+}
+
 #header {
    position: fixed;
     top: 0px;
@@ -69,6 +74,7 @@ h1 {
     height: 95px;
     z-index: 9999;
     padding-top: 27px;
+    min-width: 320px;
 }
 
 #sp_menu {
@@ -285,13 +291,13 @@ h1 {
 /*********** PAGE 3 **************/
 
 #pg3 {
-  background: url(../images/img_experienceBeautiful.jpg) center center;
+  background: url(../images/img_experienceBeautiful.svg) center center;
   background-repeat: no-repeat;
-  width: 100%;
   height: 100%;
   background-size:cover;
   box-sizing: content-box;
   padding-top: 6%;
+  margin-left:-1px !important; /* Hack for SVG missdraw */
 }
 
 #pg3 .title {
@@ -311,13 +317,13 @@ h1 {
   text-align: left;
   width:48%;
   min-width: 415px;
-  margin-top: 40px;
+  margin-top: 3%;
 }
 
 #content_pg3 h1 {
   color:#745d3b !important;
   border-bottom: 1px #735d39 solid;
-  padding:0 0 5px 0!important;
+  padding:0 5px 5px 0!important;
   font-size:310% !important;
   margin:0 !important;
   max-width: inherit;
@@ -481,11 +487,27 @@ h1 {
   #pg4 .title {
     top: 370%;
   }
+
+  #content_pg3 {
+    margin-top: 5%;
+  }
+
+  #content_pg4 {
+    margin-top: 8%;
+  }
 }
 
 @media screen and (max-width:1024px) and (min-width:801px){
   #pg4 .title {
-    top: 365%;
+    top: 360%;
+  }
+
+  #content_pg3 {
+    margin-top: 8%;
+  }
+
+  #content_pg4 {
+    margin-top: 11%;
   }
 }
 
@@ -494,54 +516,164 @@ h1 {
   #pg4 .title {
     top: 360%;
   }
+
+  #content_pg3 {
+    margin-top: 10%;
+  }
+
+  #content_pg4 {
+    margin-top: 16%;
+  }
+
+  #content_pg4 h1 {
+    width: 65%;
+  }
 }
+
 
 @media screen and (max-width:640px){
-  #pg4 .title {
-    min-width: 300px;
-    top: 354%;
+  #header {
+    height: 65px;
+    padding-top: 20px;
   }
 
-  h1 {
-    font-size:250% !important;
-  }
-
-}
-
-@media screen and (max-width:475px){
   #logo_index img {
     width: 25%;
   }
 
   #logo_top {
-    text-align: left;
-    margin-left: 20px;
+    padding-top: 10px;
+    margin-left: 20%;
   }
 
   #logo_top img {
     width: 35px;
-    margin-right: 0px;
+  }
+
+  #nav {
+    margin-right: 7px;
+  }
+
+  #bot_menu {
+    min-width: 35px;
+  }
+
+  #logo_top h2 {
+    font-size: 100%;
+  }
+
+  #sp_menu {
+    margin-right: 5px;
+    font-size: 75%;
+  }
+
+  #pg4 .title {
+    min-width: 300px;
+    top: 354%;
+  }
+
+  h1, #content_pg3 h1 {
+    font-size:250% !important;
+  }
+
+  #content_pg3 {
+    margin-top: 20%;
+    min-width: 350px;
+  }
+
+   #content_pg4 {
+    margin-top: 22%;
+  }
+
+  #content_pg4 h1 {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width:475px){
+  body {
+    overflow-x:hidden;
+  }
+
+  #header {
+    height: 65px;
+    padding-top: 20px;
+  }
+
+  #logo_index img {
+    width: 25%;
+  }
+
+  #logo_top {
+    padding-top: 10px;
+    margin-left: 9px;
+  }
+
+  #logo_top img {
+    width: 35px;
+  }
+
+  #nav {
+    margin-right: 20px;
+  }
+
+  #bot_menu {
+    min-width: 35px;
+  }
+
+  #logo_top h2 {
+    font-size: 100%;
+  }
+
+  #sp_menu {
+    margin-right: 5px;
+    font-size: 75%;
   }
 
   #pg2 h2, #pg3 h2, #pg4 h2, #pg5 h2 {
     font-size: 100%;
   }
 
-  #pg2 h1, #pg3 h1, #pg4 h1, #pg5 h1 {
-    padding: 0px;
-    margin: 10px 0;
+  #content_pg2 {
+    margin-top: 90px;
+    min-width: 295px;
+  }
+
+  #content_pg2 p, #content_pg3 p {
+    padding-right: 15%;
+    font-size: 70%;
   }
 
   #pg3 h1 {
     margin: 10px 0 20px 0;
   }
 
-  #header img {
-    min-width: 45px;
+  #content_pg3 {
+    min-width: 295px;
+    margin-top: 40%;
   }
 
-  .sepia {
-    margin-left: 19px;
+  #content_pg4 {
+    margin-top: 120px;
+    width: 95%;
+    min-width: 100px;
+  }
+
+  #content_pg4 h1 {
+    width: 80%;
+  }
+
+  #content_pg5 {
+    min-width: 315px;
+  }
+
+  #pg5 h1 {
+    min-width: 250px;
+  }
+
+  #pg5 .title {
+    top: 460%;
   }
 
   #logo_index h1 {
@@ -550,10 +682,6 @@ h1 {
 
   #logo_index .sepia {
     margin-left: 0px;
-  }
-
-  #pg5 h1 {
-    min-width: 220px;
   }
 
   .scrolldown {

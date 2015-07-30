@@ -290,7 +290,9 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'scripts/{,*/}*.*', // Grants all scripts 'll be taken into account
+            'fonts/{,*/}*.*'    // Grants all fonts 'll be taken into account
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
