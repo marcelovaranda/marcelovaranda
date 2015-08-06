@@ -53,6 +53,12 @@ h1 {
   font-family: 'Lobster Two', cursive;
 }
 
+h3 {
+  font-family: 'Lobster Two', cursive;
+  font-weight: bold;
+  font-size: 150%;
+}
+
 .container {
   margin: 0 auto;
   padding:0;
@@ -271,7 +277,7 @@ h1 {
   color:#fff !important;
   float:right;
   text-align: left;
-  width:48%;
+  width:55%;
   min-width: 415px;
   margin-top: 60px;
 }
@@ -298,6 +304,7 @@ h1 {
   box-sizing: content-box;
   padding-top: 6%;
   margin-left:-1px !important; /* Hack for SVG missdraw */
+  display: inline-table;
 }
 
 #pg3 .title {
@@ -315,7 +322,7 @@ h1 {
 #content_pg3 {
   float:right;
   text-align: left;
-  width:48%;
+  width:55%;
   min-width: 415px;
   margin-top: 3%;
 }
@@ -334,6 +341,37 @@ h1 {
   padding-bottom:20px;
 }
 
+.ln_box {
+  max-width: 220px;
+}
+
+.ln_box img {
+    width: 100%;
+    max-width: 160px;
+    cursor:pointer;
+}
+
+.inner {
+  -moz-box-shadow:    -1px 1px 6px 0px rgba(0,0,0,0.4);
+  -webkit-box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.4);
+  box-shadow:     -1px 1px 6px 0px rgba(0,0,0,0.4); 
+  background-color:#666;
+  margin: 0px 0px 10px;
+  padding: 9px;
+  max-width:180px;
+}
+
+.seeMore {
+  text-align: right;
+  font-size: 110%;
+  font-family:"neuzeitGrotBold", arial;
+  min-width:137px;
+}
+
+.seeMore a {
+  color:#000;
+}
+
 /*********** PAGE 4 **************/
 
 #pg4 {
@@ -347,7 +385,7 @@ h1 {
 }
 
 #pg4 .title {
-  top: 375%;
+  top: 364%;
   width:auto;
   min-width: 525px;
 }
@@ -421,6 +459,12 @@ h1 {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'neuzeitGrotBold';
+  src: url('/fonts/neuzeitGrot.ttf');
+  font-style: normal;
+}
+
 #menu {
   display:none;
   position:fixed;
@@ -485,11 +529,16 @@ h1 {
 
 @media screen and (max-width:1280px) and (min-width:1025px){
   #pg4 .title {
-    top: 370%;
+    top: 360%;
   }
 
   #content_pg3 {
-    margin-top: 5%;
+    margin-top: 7%;
+    width: 58%;
+  }
+
+  .ln_box {
+    max-width: 200px;
   }
 
   #content_pg4 {
@@ -503,7 +552,8 @@ h1 {
   }
 
   #content_pg3 {
-    margin-top: 8%;
+    margin-top: 14%;
+    width: 58%;
   }
 
   #content_pg4 {
@@ -518,7 +568,8 @@ h1 {
   }
 
   #content_pg3 {
-    margin-top: 10%;
+    margin-top: 14%;
+    width: 65%;
   }
 
   #content_pg4 {
@@ -527,6 +578,10 @@ h1 {
 
   #content_pg4 h1 {
     width: 65%;
+  }
+
+  .col-xs-12 {
+    width: 30% !important;
   }
 }
 
@@ -577,11 +632,12 @@ h1 {
   }
 
   #content_pg3 {
-    margin-top: 20%;
+    margin-top: 30%;
     min-width: 350px;
+    width: 75%;
   }
 
-   #content_pg4 {
+  #content_pg4 {
     margin-top: 22%;
   }
 
@@ -589,6 +645,14 @@ h1 {
     width: 80%;
   }
 
+  .col-xs-12 {
+    width: 30% !important;
+  }
+
+  .seeMore {
+    font-size: 100%;
+    min-width: 125px;
+  }
 }
 
 @media screen and (max-width:475px){
@@ -651,7 +715,11 @@ h1 {
 
   #content_pg3 {
     min-width: 295px;
-    margin-top: 40%;
+    margin-top: 49%;
+  }
+
+  .ln_box {
+    margin: auto 12%;
   }
 
   #content_pg4 {
@@ -664,6 +732,11 @@ h1 {
     width: 80%;
   }
 
+  #pg4 .title {
+    min-width: 300px;
+    top: 412%;
+  }
+
   #content_pg5 {
     min-width: 315px;
   }
@@ -673,7 +746,7 @@ h1 {
   }
 
   #pg5 .title {
-    top: 460%;
+    top: 520%;
   }
 
   #logo_index h1 {
@@ -687,6 +760,17 @@ h1 {
   .scrolldown {
     width: 82px;
     left: 38%;
+  }
+
+  .seeMore {
+    font-size: 130%;
+    min-width: 125px;
+    text-align: center;
+    margin-right:10px;
+  }
+
+  .col-xs-12 {
+    width: 100% !important;
   }
 }
 
