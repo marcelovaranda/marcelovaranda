@@ -11,6 +11,38 @@ function bindEvents(){
 	$('h1','.fadeLater').one(animationEnds, function(){
 		$(this).parent().addClass(animationClass2);
 	});
+/* // CARROSSEL
+	$(window).resize(function(){
+		
+		var $carrousel = $('.carrossel');
+
+		if($(window).width() < 768){
+		  if($carrousel.hasClass('slick-initialized')) {
+		    $carrousel.slick('unslick');
+		  }
+		  $carrousel.slick({
+			  infinite: false,
+			  speed: 500,
+			  slidesToShow: 3,
+			  slidesToScroll: 3,
+			  arrows:true,
+			  responsive: [
+			        {
+			          breakpoint: 768,
+			          settings: {
+			          slidesToShow: 3,
+			          slidesToScroll: 3,
+			          vertical:true,
+			          arrows:true,
+			          }
+			        }
+			        ]
+			});
+		} else {
+		  $carrousel.slick('unslick');
+		}
+	});
+*/
 }
 
 function detectScroll(){
